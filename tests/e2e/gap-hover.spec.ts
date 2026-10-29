@@ -89,6 +89,9 @@ ORIGIN
   expect(session.result.plot.reference.features ?? []).toHaveLength(0);
   expect(session.result.plot.reference.annotations ?? []).toHaveLength(0);
   await page.getByLabel('Load session').setInputFiles(savedPath);
+  const loadedNotice = page.getByText('Session and saved result loaded.');
+  await expect(loadedNotice).toBeVisible();
+  await expect(loadedNotice).toBeHidden();
   await hoverReference(page, 6000, 12000);
   await expect(tooltip).toContainText('gapGene');
   expect(errors).toEqual([]);
