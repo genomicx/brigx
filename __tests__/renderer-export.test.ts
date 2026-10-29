@@ -114,6 +114,7 @@ describe('editable SVG export', () => {
     expect(svg.querySelector('#legends')?.getAttribute('inkscape:groupmode')).toBe('layer');
     expect(svg.querySelector('#title-group')?.textContent).toContain('BRIGX test');
     expect(exported).toContain('xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"');
+    expect(svg.querySelector('style')?.textContent).toBe('text { font-family: sans-serif; }');
   });
 
   it('keeps dense annotation leaders on the feature side of the plot', () => {

@@ -350,9 +350,9 @@ export class CircularPlotRenderer {
     topDefs.setAttribute('id', 'defs');
     this.svg.appendChild(topDefs);
 
-    // Embed font-family style so exports use sans-serif
+    // Match the generic sans-serif family used by the live canvas and PNG export.
     const style = document.createElementNS('http://www.w3.org/2000/svg', 'style');
-    style.textContent = 'text { font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif; }';
+    style.textContent = 'text { font-family: sans-serif; }';
     this.svg.appendChild(style);
 
     // Add white background rect so exports also have white background
