@@ -570,6 +570,7 @@ test.describe('BRIGX e2e — circular genome plot', () => {
     expect(svg).toContain('scale(1.44)')
     expect(svg).toContain('id="legends"')
     expect(svg).toContain('inkscape:label="Legends"')
+    expect(svg).toContain('text { font-family: sans-serif; }')
 
     await page.getByRole('button', { name: 'Shrink plot' }).click()
     await expect(page.getByRole('button', { name: 'Expand plot' })).toBeVisible()
