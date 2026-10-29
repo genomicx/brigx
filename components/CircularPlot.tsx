@@ -294,7 +294,7 @@ export default function CircularPlot({ data, imageProperties, onViewStateChange,
         onWheel={handleWheel}
         data-plot-pan-x={Math.round(pan.x)}
         data-plot-pan-y={Math.round(pan.y)}
-        style={{ cursor: draggingLegend ? 'move' : isDragging ? 'grabbing' : 'grab', background: 'var(--gx-bg-alt)' }}
+        style={{ cursor: draggingLegend ? 'move' : isDragging ? 'grabbing' : 'grab', background: 'var(--gx-bg)' }}
       >
         <canvas
           ref={setCanvasElement}

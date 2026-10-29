@@ -34,7 +34,7 @@ input:focus-visible {
 }
 
 .gx-nav {
-  background: var(--gx-bg);
+  background: var(--gx-nav-bg);
   backdrop-filter: none;
   -webkit-backdrop-filter: none;
 }
@@ -580,7 +580,7 @@ input:focus-visible {
 
 .product-proof {
   padding-block: clamp(4rem, 8vw, 7rem);
-  background: #0b1f25;
+  background: var(--gx-nav-bg);
   color: #f8fafc;
 }
 
@@ -822,7 +822,8 @@ input:focus-visible {
 }
 
 .browser-session-inner button:disabled {
-  opacity: 0.45;
+  color: var(--gx-text-muted);
+  opacity: 1;
   cursor: not-allowed;
 }
 
@@ -1213,8 +1214,8 @@ input:focus-visible {
   white-space: pre-wrap;
   color: var(--gx-text);
   border-top: 1px solid color-mix(in srgb, var(--gx-error) 22%, var(--gx-border));
-  font-family: 'JetBrains Mono', 'Fira Code', monospace;
-  font-size: 0.75rem;
+  font-family: var(--gx-font-mono);
+  font-size: 0.875rem;
   line-height: 1.55;
 }
 
@@ -1230,7 +1231,7 @@ input:focus-visible {
   background: var(--gx-bg);
   border: 1px dashed var(--gx-border);
   border-radius: var(--gx-radius-sm);
-  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-family: var(--gx-font-mono);
   font-size: 0.75rem;
   line-height: 1.25rem;
   text-align: right;
@@ -1262,7 +1263,7 @@ input:focus-visible {
   border: 2px solid var(--gx-accent);
   border-radius: var(--gx-radius-sm);
   box-shadow: 0 0 0 2px color-mix(in srgb, var(--gx-accent) 18%, transparent);
-  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-family: var(--gx-font-mono);
   font-size: 0.75rem;
 }
 
@@ -1274,7 +1275,7 @@ input:focus-visible {
   background: transparent;
   border: 0;
   outline: 0;
-  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-family: var(--gx-font-mono);
   font-size: 0.75rem;
   line-height: 1.25rem;
   text-align: right;
