@@ -41,7 +41,7 @@
         "prepare": "npm run hooks:install"
     },
     "dependencies": {
-        "@genomicx/ui": "0.9.1",
+        "@genomicx/ui": "0.10.0",
         "pako": "2.2.0",
         "react": "19.2.8",
         "react-dom": "19.2.8",
